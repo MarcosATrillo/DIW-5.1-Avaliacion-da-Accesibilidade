@@ -8,3 +8,6 @@
   white-space:nowrap;
   border:0;
 }
+
+.datos-grid{ display:flex; gap:2em; }
+.datos-grid .col{ flex:1; }
