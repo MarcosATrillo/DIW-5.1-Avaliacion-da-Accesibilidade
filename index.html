@@ -68,46 +68,83 @@
       <th scope="col">Eur.</th>
     </tr>
   </thead>
+
   <tbody>
-  <tr class="producto">
-    <td class="producto" id="id978842043022">
-	    <p><a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=22012"><img src="img/978842043022.GIF" alt="" />Dónde viven los monstruos</a>
-		de SENDAK, MAURICE.</p>
-	    <p>Editorial Alfaguara: Madrid, 1995.</p>
-	    <p>ISBN: 978-84-20430-22-5 	</p></td>
-    <td>13,45 &euro;</td>
-	<label for="a_uds">Unidades</label>
-    <td><input type="text" id="a_uds" name="a_uds" value="1" size="4" /></td>
-    <td>13,45 &euro;</td>
-  </tr>
-  <tr class="producto">	
-  	 <td class="producto" id="id978849638856">
-	    <p><a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=25924"><img src="img/978849638856.GIF" alt="" />Los tres bandidos</a>
-		de UNGERER, TOMI.  </p>
-	    <p>Editorial Kalandraka: Sevilla 2007.</p>
-	    <p>ISBN 978-84-96388-56-7</p>
-	 </td>
-     <td>15,00 &euro;</td>
-	<label for="b_uds">Unidades</label>
-    <td><input type="text" id="b_uds" name="b_uds" value="1" size="4" /></td>
-    <td>15,00 &euro;</td>
-  </tr>
-  <tr class="producto">	
-  	<td class="producto" id="id978842418108">
-	  <p><a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=40898"><img src="img/978842418108.GIF" alt=""/>El día  en que a mamá se le puso cara de tetera</a>
-	  de SAIZ, RAQUEL. </p>
-	  <p>OQO Editora: Pontevedra, 2007.</p>
-	  <p>ISBN: 978-84-96788-37-4  </p></td>
-    <td>12,50 &euro;</td>
-	<label for="c_uds">Unidades</label>
-    <td><input type="text" id="c_uds" name="c_uds" value="2" size="4" /></td>
-    <td>25,00 &euro;</td>
-  </tr>
-  <tr id="total">	
-  	 <td colspan="3" align="right"><b>Precio Total</b></td>
-    <td>53,45 &euro;</td>
-  </tr>
-  </table>
+    <tr class="producto">
+      <td class="producto" id="id978842043022">
+        <p>
+          <a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=22012">
+            <img src="img/978842043022.GIF" alt="" />
+            Dónde viven los monstruos
+          </a>
+          de SENDAK, MAURICE.
+        </p>
+        <p>Editorial Alfaguara: Madrid, 1995.</p>
+        <p>ISBN: 978-84-20430-22-5</p>
+      </td>
+
+      <td>13,45 &euro;</td>
+
+      <td>
+        <label for="a_uds" class="sr-only">Unidades de “Dónde viven los monstruos”</label>
+        <input type="text" id="a_uds" name="a_uds" value="1" size="4" />
+      </td>
+
+      <td>13,45 &euro;</td>
+    </tr>
+
+    <tr class="producto">
+      <td class="producto" id="id978849638856">
+        <p>
+          <a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=25924">
+            <img src="img/978849638856.GIF" alt="" />
+            Los tres bandidos
+          </a>
+          de UNGERER, TOMI.
+        </p>
+        <p>Editorial Kalandraka: Sevilla 2007.</p>
+        <p>ISBN: 978-84-96388-56-7</p>
+      </td>
+
+      <td>15,00 &euro;</td>
+
+      <td>
+        <label for="b_uds" class="sr-only">Unidades de “Los tres bandidos”</label>
+        <input type="text" id="b_uds" name="b_uds" value="1" size="4" />
+      </td>
+
+      <td>15,00 &euro;</td>
+    </tr>
+
+    <tr class="producto">
+      <td class="producto" id="id978842418108">
+        <p>
+          <a href="http://www.lamardeletras.com/tienda.php?ver=libro&codigo=40898">
+            <img src="img/978842418108.GIF" alt="" />
+            El día en que a mamá se le puso cara de tetera
+          </a>
+          de SAIZ, RAQUEL.
+        </p>
+        <p>OQO Editora: Pontevedra, 2007.</p>
+        <p>ISBN: 978-84-96788-37-4</p>
+      </td>
+
+      <td>12,50 &euro;</td>
+
+      <td>
+        <label for="c_uds" class="sr-only">Unidades de “El día en que a mamá se le puso cara de tetera”</label>
+        <input type="text" id="c_uds" name="c_uds" value="2" size="4" />
+      </td>
+
+      <td>25,00 &euro;</td>
+    </tr>
+
+    <tr id="total">
+      <td colspan="3" style="text-align:right;"><strong>Precio Total</strong></td>
+      <td>53,45 &euro;</td>
+    </tr>
+  </tbody>
+</table>
 	
 	<p id="info_en">Non european customers can request a VAT refund</p>
 	
@@ -259,7 +296,6 @@
   </div>
 
   <div id="div_captcha">
-    Escriba los siguientes caracteres: 
 	<label for="captcha">Escriba los siguientes caracteres:</label>
     <img src="img/Captcha-ejemplo.jpg" alt="" width="78" height="32" />
     <input type="text" id="captcha" size="5" onblur="document.forms[0].submit()" />
@@ -325,6 +361,7 @@
 </body>
 
 </html>
+
 
 
 
