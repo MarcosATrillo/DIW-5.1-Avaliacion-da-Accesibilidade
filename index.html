@@ -34,7 +34,7 @@ function showhide(control, elem){
 
 <body onload="showhide(document.getElementById('info_promociones'), document.getElementById('lista_promociones'))">
 
-<div id="contenido">
+<main id="contenido">
 
 
 <!--
@@ -53,8 +53,7 @@ function showhide(control, elem){
 <strong>Paso:</strong><img src="img/1.png" alt="" /><img src="img/2on.png" alt="" width="63" height="42" /><img src="img/3.png" alt="" width="85" height="42" /></div>
 
 <div id="imprimir">
-  <a href="javascript:print()" ><img src="img/iconPrint.gif" width="20" alt="Imprimir" /></a>
-  <a href="javascript:print()">Imprimir</a>
+  <a href="#" onclick="window.print(); return false;"><img src="img/iconPrint.gif" width="20" alt="" />Imprimir</a>
 </div>
 
 <div id="ayuda">
@@ -215,8 +214,8 @@ function showhide(control, elem){
     </td>
     <td>
       <div class="campo_form">
-        <label>Horario de entrega </label>
-        <select name="horario">    
+        <label for="horario">Horario de entrega </label>
+        <select id="horario" name="horario">    
         	 <option value="all">Todo el día</option>    
         	 <option value="a">De 9:00 a 14:00 horas</option>      
         	 <option value="b">De 14:00 a 19:00 horas</option>      
@@ -241,7 +240,7 @@ function showhide(control, elem){
   </div>
 
   <div>
-    <label>¿Desea recibir información sobre nuestras promociones?</label>
+    <label for="info_promociones">¿Desea recibir información sobre nuestras promociones?</label>
     <select id="info_promociones" name="info_promociones" onchange="showhide(this, document.getElementById('lista_promociones'))">        	    
       <option value="si" selected="selected">SI</option>      
       <option value="no">NO</option>      
@@ -253,45 +252,45 @@ function showhide(control, elem){
 
     <div class="grupo_check">
       <div>
-        <input type="checkbox" name="prom" id="prom" value="hispanoamericana">
-        <label for="prom">Literatura hispano americana </label>
+        <input type="checkbox" name="prom" id="prom_hisp" value="hispanoamericana">
+        <label for="prom_hisp">Literatura hispano americana </label>
       </div>
       <div>
-        <input type="checkbox" name="prom" id="prom" value="extranjera">
-        <label>Literatura extanjera </label>
+        <input type="checkbox" name="prom" id="prom_ext" value="extranjera">
+        <label for="prom_ext">Literatura extanjera </label>
       </div>
       <div>
-        <input type="checkbox" name="prom" id="prom" value="clasicosespannoles">
-        <label>Clásicos españoles</label> </div>
+        <input type="checkbox" name="prom" id="prom_clas" value="clasicosespannoles">
+        <label for="prom_clas">Clásicos españoles</label> </div>
     </div>
 
     <div class="grupo_check">
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="clasicosmundiales">
-        <label>Clásicos mundiales </label>
+        <input type="checkbox" name="prom" id="prom_clas_mund" value="clasicosmundiales">
+        <label for="prom_clas_mund">Clásicos mundiales </label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="biografia">
-        <label>Biografía</label>
+        <input type="checkbox" name="prom" id="prom_bio" value="biografia">
+        <label for="prom_bio">Biografía</label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="comic"> 
-        <label>Cómic y novela gráfica </label>
+        <input type="checkbox" name="prom" id="prom_comic" value="comic"> 
+        <label for="prom_comic">Cómic y novela gráfica </label>
       </div>
     </div>
 
     <div class="grupo_check">
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="infantil">
-        <label>Literatura infantil </label>
+        <input type="checkbox" name="prom"  id="prom_inf" value="infantil">
+        <label for="prom_inf">Literatura infantil </label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="juvenil">
-        <label>Literatura juvenil </label>
+        <input type="checkbox" name="prom"  id="prom_juv" value="juvenil">
+        <label for="prom_juv">Literatura juvenil </label>
       </div>
       <div>
-        <input type="checkbox" name="prom"  id="prom" value="tecnico">
-        <label>Libro técnico</label> </div>
+        <input type="checkbox" name="prom"  id="prom_tec" value="tecnico">
+        <label for="prom_tec">Libro técnico</label> </div>
     </div>
 
   </div>
@@ -326,10 +325,12 @@ function showhide(control, elem){
 
   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin condimentum, diam in porta ullamcorper, ipsum nisi venenatis dui, quis convallis purus lectus vel magna. Morbi consectetuer odio sed nibh. Sed turpis sapien, ultrices ac, condimentum eu, imperdiet sed, pede. Suspendisse potenti. Sed elit risus, accumsan eget, accumsan non, placerat ac, massa. Vivamus egestas, leo eget nonummy consectetuer, mi enim imperdiet lorem, ut rhoncus ligula diam at nisi. Morbi porta malesuada lorem. Donec euismod nunc venenatis purus. In cursus sagittis ipsum. Sed dapibus fermentum dolor. Quisque in lacus sit amet turpis adipiscing tristique. Aliquam elit. Mauris sit amet magna. Nulla id mi. Duis dui augue, porttitor id, pellentesque in, venenatis dapibus, ligula. </p>
 
-  <p class="lista">1. Nullam ut ante nec dolor aliquam auctor.<br />
-  2. Aenean ultrices elit id felis.<br />
-  3. Maecenas nec erat eget eros malesuada nonummy. <br />
-  4. Nulla facilisi. </p>
+  <ol class="lista">
+	  <li>1. Nullam ut ante nec dolor aliquam auctor.</li>
+  	  <li>2. Aenean ultrices elit id felis.</li>
+      <li>3. Maecenas nec erat eget eros malesuada nonummy.</li>
+      <li>4. Nulla facilisi.</li>
+  </ol>
 
   <p>Donec congue. Donec dictum nisi eget nisl. Aenean sed arcu et tortor laoreet rhoncus. Mauris vulputate. Morbi pellentesque, nisi eget vestibulum luctus, enim mi iaculis risus, sit amet facilisis purus nulla quis elit. Sed velit turpis, eleifend in, ultricies non, egestas vulputate, urna. Ut ut tellus et metus auctor hendrerit. Aliquam in turpis. Aliquam rutrum mollis nulla. Sed quis pede. Quisque a massa. Quisque feugiat urna a metus. Nulla urna. Cras diam est, scelerisque ut, rutrum quis, luctus a, dolor.</p>
 
@@ -361,6 +362,7 @@ function showhide(control, elem){
 </body>
 
 </html>
+
 
 
 
