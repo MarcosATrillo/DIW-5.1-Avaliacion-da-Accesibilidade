@@ -88,6 +88,7 @@ function showhide(control, elem){
 	    <p>Editorial Alfaguara: Madrid, 1995.</p>
 	    <p>ISBN: 978-84-20430-22-5 	</p></td>
     <td>13,45 &euro;</td>
+	<label for="a_uds"></label>
     <td><input type="text" id="a_uds" name="a_uds" value="1" size="4" /></td>
     <td>13,45 &euro;</td>
   </tr>
@@ -99,6 +100,7 @@ function showhide(control, elem){
 	    <p>ISBN 978-84-96388-56-7</p>
 	 </td>
      <td>15,00 &euro;</td>
+	<label for="b_uds"></label>
     <td><input type="text" id="b_uds" name="b_uds" value="1" size="4" /></td>
     <td>15,00 &euro;</td>
   </tr>
@@ -109,6 +111,7 @@ function showhide(control, elem){
 	  <p>OQO Editora: Pontevedra, 2007.</p>
 	  <p>ISBN: 978-84-96788-37-4  </p></td>
     <td>12,50 &euro;</td>
+	<label for="c_uds"></label>
     <td><input type="text" id="c_uds" name="c_uds" value="2" size="4" /></td>
     <td>25,00 &euro;</td>
   </tr>
@@ -149,13 +152,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label>Empresa </label>
+        <label for="empresa">Empresa</label>
         <input type="text" id="empresa" name="empresa" />
       </div>
     </td>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Dirección </label>
+        <label class="obligatorio" for="dir">Dirección </label>
         <input type="text" id="dir" name="dir" />
       </div>
     </td>
@@ -163,13 +166,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Nombre </label>
+        <label class="obligatorio" for="nombre">Nombre </label>
         <input type="text" id="nombre" name="nombre" />
       </div>
     </td>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Localidad </label>
+        <label class="obligatorio" for="localidad">Localidad </label>
         <input type="text" id="localidad" name="localidad" />
       </div>
     </td>
@@ -177,13 +180,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Apellidos </label>
+        <label class="obligatorio" for="apellidos">Apellidos </label>
         <input type="text" id="apellidos" name="apellidos" />
       </div>
     </td>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Provincia </label>
+        <label class="obligatorio" for="provincia">Provincia </label>
         <input type="text" id="provincia" name="provincia" />
       </div>
     </td>
@@ -191,13 +194,13 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">e-mail </label>
+        <label class="obligatorio" for="email">e-mail </label>
         <input type="text" id="email" name="email" />
       </div>
     </td>
     <td>
     	<div class="campo_form">
-        <label class="obligatorio">CP </label>
+        <label class="obligatorio" for="cp">CP </label>
         <input type="text" id="cp" name="cp" />
       </div>
     </td>
@@ -205,7 +208,7 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label class="obligatorio">Tlf. de contacto </label>
+        <label class="obligatorio" for="tlf">Tlf. de contacto </label>
         <input type="text" id="tlf" name="tlf" />
       </div>
     </td>
@@ -223,7 +226,7 @@ function showhide(control, elem){
   <tr>
     <td>
       <div class="campo_form">
-        <label>NIF/CIF </label>
+        <label for="nif">NIF/CIF </label>
         <input type="text" id="nif" name="nif" />
       </div>
     </td>
@@ -250,44 +253,44 @@ function showhide(control, elem){
     <div class="grupo_check">
       <div>
         <input type="checkbox" name="prom" id="prom" value="hispanoamericana">
-        <label>Literatura hispano americana </label>
+        <label for="prom">Literatura hispano americana </label>
       </div>
       <div>
         <input type="checkbox" name="prom" id="prom" value="extranjera">
-        <label>Literatura extanjera </label>
+        <label for="prom">Literatura extanjera </label>
       </div>
       <div>
         <input type="checkbox" name="prom" id="prom" value="clasicosespannoles">
-        <label>Clásicos españoles</label> </div>
+        <label for="prom">Clásicos españoles</label> </div>
     </div>
 
     <div class="grupo_check">
       <div>
         <input type="checkbox" name="prom"  id="prom" value="clasicosmundiales">
-        <label>Clásicos mundiales </label>
+        <label for="prom">Clásicos mundiales </label>
       </div>
       <div>
         <input type="checkbox" name="prom"  id="prom" value="biografia">
-        <label>Biografía</label>
+        <label for="prom">Biografía</label>
       </div>
       <div>
         <input type="checkbox" name="prom"  id="prom" value="comic"> 
-        <label>Cómic y novela gráfica </label>
+        <label for="prom">Cómic y novela gráfica </label>
       </div>
     </div>
 
     <div class="grupo_check">
       <div>
         <input type="checkbox" name="prom"  id="prom" value="infantil">
-        <label>Literatura infantil </label>
+        <label for="prom">Literatura infantil </label>
       </div>
       <div>
         <input type="checkbox" name="prom"  id="prom" value="juvenil">
-        <label>Literatura juvenil </label>
+        <label for="prom">Literatura juvenil </label>
       </div>
       <div>
         <input type="checkbox" name="prom"  id="prom" value="tecnico">
-        L<label>ibro técnico</label> </div>
+        <label for="prom">Libro técnico</label> </div>
     </div>
 
   </div>
@@ -357,4 +360,5 @@ function showhide(control, elem){
 </body>
 
 </html>
+
 
