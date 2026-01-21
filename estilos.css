@@ -18,7 +18,7 @@
 	  font-family: arial, verdana, helvetica, sans-serif;
   	font-size: 1.5em;
   	font-weight: bold;
-  	color: #ccc;
+  	color: #595959;
   	clear: both;
   	text-align: right;
 	}
@@ -266,4 +266,5 @@
 	  border-top: 3px solid #ccc;
 		padding: 1em;
 		text-align: center;
+
 	}
